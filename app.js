@@ -77,7 +77,7 @@ app.get('/todo', function (req, res) {
     })
     /* Redirects to the to do list if the page requested is not found */
     .use(function (req, res, next) {
-        res.redirect('/to');
+        res.redirect('/todo');
     })
 
     .listen(port, function () {
